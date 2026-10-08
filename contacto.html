@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Potenciá tu Negocio</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div id="contenedor">
+      <div id="encabezado">
+        <div id="marca">
+          <h1>Potenciá tu Negocio</h1>
+          <p>Ideas para mejorar, ordenar y hacer crecer tu emprendimiento</p>
+        </div>
+
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="problemas.html">Problemas</a></li>
+          <li><a href="plan.html">Plan</a></li>
+          <li><a href="contacto.html" class="activo">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div id="hero">
+        <div class="contenido">
+          <div id="hero-texto">
+            <p class="etiqueta">AHORA TE TOCA A VOS</p>
+            <h2>Ordená la información de tu emprendimiento</h2>
+            <p>
+              Antes de pensar qué conviene mejorar, es útil tener claro en qué situación está
+              el negocio, qué rubro tiene y qué aspectos necesitan más atención. El formulario
+              organiza esa información en pocos pasos.
+            </p>
+          </div>
+
+          <div id="hero-panel">
+            <h3>Antes de completar</h3>
+
+            <div class="dato">
+              <p class="dato-numero">1</p>
+              <p>Ingresá tus datos de contacto.</p>
+            </div>
+
+            <div class="dato">
+              <p class="dato-numero">2</p>
+              <p>Indicá la situación actual de tu negocio.</p>
+            </div>
+
+            <div class="dato">
+              <p class="dato-numero">3</p>
+              <p>Marcá los aspectos que te gustaría mejorar.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="contacto">
+        <div id="contacto-info">
+          <p class="etiqueta">CONTANOS SOBRE TU NEGOCIO</p>
+          <h2>Completá el formulario</h2>
+          <p>
+            Completá el formulario con algunos datos de tu emprendimiento y marcá qué áreas
+            te gustaría mejorar. La idea es ordenar la información y pensar con más claridad
+            qué aspecto conviene trabajar primero.
+          </p>
+
+          <div class="mini-dato">
+            <h3>Consejo</h3>
+            <p>
+              Elegí primero uno o dos problemas importantes. Intentar cambiar todo al mismo
+              tiempo suele hacer más difícil medir los resultados.
+            </p>
+          </div>
+        </div>
+
+        <div id="formulario">
+          <form action="#" method="POST">
+            <fieldset>
+              <legend>Datos personales</legend>
+
+              <div class="fila-formulario">
+                <div class="campo campo-mitad">
+                  <label for="nombre">Nombre *</label>
+                  <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+                </div>
+
+                <div class="campo campo-mitad">
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+                </div>
+              </div>
+
+              <div class="campo">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="11 1234-5678" />
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Tu negocio</legend>
+
+              <div class="campo">
+                <label for="rubro">Rubro *</label>
+                <select id="rubro" name="rubro" required>
+                  <option value="">Seleccioná una opción...</option>
+                  <option value="gastronomia">Gastronomía</option>
+                  <option value="indumentaria">Indumentaria</option>
+                  <option value="tecnologia">Tecnología</option>
+                  <option value="servicios">Servicios</option>
+                  <option value="comercio">Comercio</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+
+              <div class="campo">
+                <label>Situación actual</label>
+                <div class="opciones">
+                  <label><input type="radio" name="etapa" value="inicio" checked /> Estoy empezando</label>
+                  <label><input type="radio" name="etapa" value="funcionando" /> Ya está funcionando</label>
+                  <label><input type="radio" name="etapa" value="crecimiento" /> Quiero crecer</label>
+                </div>
+              </div>
+
+              <div class="campo">
+                <label>¿Qué querés mejorar?</label>
+                <div class="opciones">
+                  <label><input type="checkbox" name="mejoras" value="ventas" /> Ventas</label>
+                  <label><input type="checkbox" name="mejoras" value="redes" /> Redes sociales</label>
+                  <label><input type="checkbox" name="mejoras" value="organizacion" /> Organización</label>
+                  <label><input type="checkbox" name="mejoras" value="clientes" /> Atención al cliente</label>
+                </div>
+              </div>
+
+              <div class="campo">
+                <label for="mensaje">Contanos un poco más</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí acá..."></textarea>
+              </div>
+            </fieldset>
+
+            <div id="botones">
+              <button type="submit">Enviar consulta</button>
+              <button type="reset">Limpiar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <footer id="footer">
+        <p>Página realizada por Stefano Guidobono 2026</p>
+      </footer>
+    </div>
+  </body>
+</html>
